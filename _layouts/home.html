@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+</head>
+<body>
+    <h1>Contents</h1>
+    <ul>
+      {% for item in site.deep-learning %}
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+        <p><a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}</a></p>
+      {% endfor %}
+      </ul>
+    <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{site.baseurl}}{{ post.url }}"><h1>{{ post.title }}</h1> </a>
+          </li>
+        {% endfor %}
+      </ul>
+</body>
+</html>

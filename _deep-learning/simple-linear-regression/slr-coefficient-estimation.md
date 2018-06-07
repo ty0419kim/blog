@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Simple Linear Regression"
-categories: Deep-Learning
+title:  "Simple Linear Regression Coefficients"
+categories: Deep-Learning Simple-Linear-Regression
 permalink: /:categories/:title:output_ext
 ---
+
 
 ## Estimating the Coefficients
 
