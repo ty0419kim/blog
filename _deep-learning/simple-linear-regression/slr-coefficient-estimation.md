@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Simple Linear Regression Coefficients"
+description: Simple linear regression 공식 유도
 categories: Deep-Learning Simple-Linear-Regression
 permalink: /:categories/:title:output_ext
 ---

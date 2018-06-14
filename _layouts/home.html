@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,19 +13,21 @@ layout: default
 </head>
 <body>
     <h1>Contents</h1>
-    <ul>
-      {% for item in site.deep-learning %}
-        <h2>{{ item.title }}</h2>
-        <p>{{ item.description }}</p>
-        <p><a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}</a></p>
-      {% endfor %}
-      </ul>
-    <ul>
-        {% for post in site.posts %}
+      <ul>
+        {% for item in site.deep-learning %}
           <li>
-            <a href="{{site.baseurl}}{{ post.url }}"><h1>{{ post.title }}</h1> </a>
-          </li>
+            <h2><a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}</a></h2>
+            <p>{{ item.description }}</p>
+          </li>            
         {% endfor %}
       </ul>
+     <!--  <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{site.baseurl}}{{ post.url }}"><h1>{{ post.title }}</h1> </a>
+            </li>
+          {% endfor %}
+      </ul> -->
+   
 </body>
 </html>
